@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Каталог</title>
+		
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/jquery-3.7.0.min.js"></script>
+		
+		<script src="js/main.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container">
+				<div class="top"><a href="#" class="logo">Ели-ели</a></div>
+				<div class="middle"></div>
+				<div class="bottom"><nav class="topmenu">
+					<a class="home" href="index.html"><span>Главная</span></a>
+					<a class="catalog current" href="catalog.html"><span>Каталог</span></a>
+					<a class="product" href="product.html"><span>Товар</span></a>
+					<a class="order" href="order.html"><span>Корзина</span></a>
+					<a class="contacts" href="contacts.html"><span>Контакты</span></a>
+				</nav></div>
+			</div>
+		</header>
+		
+		<main class="catalog">
+			<section class="container">
+				<aside>
+					<nav class="accordion">
+						<h3>Каталог <span></span></h3>
+						
+						<ul>
+							<li class="level1">
+								<a href="#catalog11">Ели живые</a>
+								
+								<span></span>
+								
+								<ul>
+									<li class="level2">
+										<a href="#catalog11">Ели живые маленькие</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog12">Ели живые средние</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog13">Ели живые большие</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog14">Ели живые огромные</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="level1">
+								<a href="#catalog21">Ели искусственные</a>
+								
+								<span></span>
+								
+								<ul>
+									<li class="level2">
+										<a href="#catalog21">Ели искусственные маленькие</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog22">Ели искусственные средние</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog23">Ели искусственные большие</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog24">Ели искусственные огромные</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="level1">
+								<a href="#catalog31">Шишки</a>
+								
+								<span></span>
+								
+								<ul>
+									<li class="level2">
+										<a href="#catalog31">Шишки маленькие</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog32">Шишки средние</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog33">Шишки большие</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog34">Шишки огромные</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="level1">
+								<a href="#catalog41">Орнаменты</a>
+								
+								<span></span>
+								
+								<ul>
+									<li class="level2">
+										<a href="#catalog41">Орнаменты маленькие</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog42">Орнаменты средние</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog43">Орнаменты большие</a>
+									</li>
+									
+									<li class="level2">
+										<a href="#catalog44">Орнаменты огромные</a>
+									</li>
+								</ul>
+							</li>
+							<li class="level1">
+								<div class="filter">
+									<form method="get" action="#">
+										<fieldset>
+											<legend>Фильтр</legend>
+											<!-- <label>Товар -->
+												<select name="product">
+													<option selected disabled>Вид товара</option>
+													<option>Живые ели</option>
+													<option>Искусственные ели</option>
+													<option>Шишки</option>
+													<option>Орнаменты</option>
+												</select>
+											<!-- </label> -->
+												
+											<ul><label class="filter-check">Размер
+												<li><input type="checkbox" name="size1" value="1"><label> Маленький</label></li>
+												<li><input type="checkbox" name="size2" value="2"><label> Средний</label></li>
+												<li><input type="checkbox" name="size3" value="3"><label> Большой</label></li>
+												<li><input type="checkbox" name="size4" value="4"><label> Огромный</label></li>
+											</label></ul>
+											
+											<ul><label class="filter-check">Цена
+												<li><input type="checkbox" name="price1" value="1"><label> менее 1000 р.</label></li>
+												<li><input type="checkbox" name="price2" value="2"><label> 1000 - 2000 р.</label></li>
+												<li><input type="checkbox" name="price3" value="3"><label> 2000 - 3000 р.</label></li>
+												<li><input type="checkbox" name="price4" value="4"><label> более 3000 р.</label></li>
+											</label></ul>
+											
+											<button type="reset">Сбросить</button> 
+											<button type="submit">Применить</button>
+										</fieldset>
+									</form>
+								</div>
+							</li>
+						</ul>
+						
+					</nav>
+				</aside>
+				
+				<article>
+					<button type="button" class="changeview"></button>
+					
+					<h1>Наши товары</h1>
+					
+					<div class="catalog_content">
+						<div id="catalog11" class="catalog_item idtovar" data-tovarid="11">
+							<img src="images/tree1.jpg" alt="Ель живая">
+							<h4 class="tovarname">Ель живая маленькая</h4>
+							<div class="price">1000</div>
+							<div class="item_shadow">
+								<a href="product.html">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog12" class="catalog_item idtovar" data-tovarid="12">
+							<img src="images/tree1.jpg" alt="Ель живая">
+							<h4 class="tovarname">Ель живая средняя</h4>
+							<div class="price">2000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog13" class="catalog_item idtovar" data-tovarid="13">
+							<img src="images/tree1.jpg" alt="Ель живая">
+							<h4 class="tovarname">Ель живая большая</h4>
+							<div class="price">3000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog14" class="catalog_item idtovar" data-tovarid="14">
+							<img src="images/tree1.jpg" alt="Ель живая">
+							<h4 class="tovarname">Ель живая огромная</h4>
+							<div class="price">4000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog21" class="catalog_item idtovar" data-tovarid="21">
+							<img src="images/tree2.jpg" alt="Ель искусственная">
+							<h4 class="tovarname">Ель искусственная маленькая</h4>
+							<div class="price">1000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog22" class="catalog_item idtovar" data-tovarid="22">
+							<img src="images/tree2.jpg" alt="Ель искусственная">
+							<h4 class="tovarname">Ель искусственная средняя</h4>
+							<div class="price">2000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog23" class="catalog_item idtovar" data-tovarid="23">
+							<img src="images/tree2.jpg" alt="Ель искусственная">
+							<h4 class="tovarname">Ель искусственная большая</h4>
+							<div class="price">3000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog24" class="catalog_item idtovar" data-tovarid="24">
+							<img src="images/tree2.jpg" alt="Ель искусственная">
+							<h4 class="tovarname">Ель искусственная огромная</h4>
+							<div class="price">4000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog31" class="catalog_item idtovar" data-tovarid="31">
+							<img src="images/cone.jpg" alt="Шишка">
+							<h4 class="tovarname">Шишка маленькая</h4>
+							<div class="price">1000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog32" class="catalog_item idtovar"data-tovarid="32">
+							<img src="images/cone.jpg" alt="Шишка">
+							<h4 class="tovarname">Шишка средняя</h4>
+							<div class="price">2000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog33" class="catalog_item idtovar" data-tovarid="33">
+							<img src="images/cone.jpg" alt="Шишка">
+							<h4 class="tovarname">Шишка большая</h4>
+							<div class="price">3000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog34" class="catalog_item idtovar" data-tovarid="34">
+							<img src="images/cone.jpg" alt="Шишка">
+							<h4 class="tovarname">Шишка огромная</h4>
+							<div class="price">4000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog41" class="catalog_item idtovar" data-tovarid="41">
+							<img src="images/ornament.jpg" alt="Орнамент">
+							<h4 class="tovarname">Орнамент маленький</h4>
+							<div class="price">1000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog42" class="catalog_item idtovar" data-tovarid="42">
+							<img src="images/ornament.jpg" alt="Орнамент">
+							<h4 class="tovarname">Орнамент средний</h4>
+							<div class="price">2000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog43" class="catalog_item idtovar" data-tovarid="43">
+							<img src="images/ornament.jpg" alt="Орнамент">
+							<h4 class="tovarname">Орнамент большой</h4>
+							<div class="price">3000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+						
+						<div id="catalog44" class="catalog_item idtovar" data-tovarid="44">
+							<img src="images/ornament.jpg" alt="Орнамент">
+							<h4 class="tovarname">Орнамент огромный</h4>
+							<div class="price">4000</div>
+							<div class="item_shadow">
+								<a href="#">Смотреть</a>
+								<button type="button">Купить</button>
+							</div>
+						</div>
+					</div>
+				</article>
+				
+				
+			</section>
+		</main>
+		
+		<footer>
+			<div class="container">
+				<div class="top"></div>
+				<nav class="bottommenu">
+					<a class="home" href="index.html"><span>Главная</span></a>
+					<a class="catalog current" href="catalog.html"><span>Каталог</span></a>
+					<a class="product" href="product.html"><span>Товар</span></a>
+					<a class="order" href="order.html"><span>Корзина</span></a>
+					<a class="contacts" href="contacts.html"><span>Контакты</span></a>
+				</nav>
+				<p class="copy">&copy; 2023</p>
+			</div>
+		</footer>
+	</body>
+</html>
